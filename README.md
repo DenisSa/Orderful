@@ -30,7 +30,7 @@ Time:        1.1 s, estimated 2 s
 Ran all test suites.
 ```
 
-I've created a few unit tests to demonstrate how I would approach testing - please note that I do not consider this number of tests / coverage complete or by any means exhaustive.
+I've created a few unit tests to demonstrate how I would approach testing - please note that I do not consider this number of tests / coverage complete or by any means exhaustive. Integration tests should be added as well.
 
 ### Functional testing
 
