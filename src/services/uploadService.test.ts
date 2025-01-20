@@ -1,5 +1,6 @@
 import { EDIFormats } from '../schemas/edi';
-import { FileOptions, UploadService } from './uploadService';
+import { FileOptions } from './primitives/FileOptions';
+import { UploadService } from './uploadService';
 
 describe('Upload service tests', () => {
   const testCases = [

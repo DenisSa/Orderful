@@ -1,5 +1,5 @@
 import { SimpleJson } from '../parsers/IParser';
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 
 export interface IConverter {
   options: FileOptions;

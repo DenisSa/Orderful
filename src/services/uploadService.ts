@@ -5,17 +5,7 @@ import { logger } from '../logger';
 import { EdiFormat, EDIFormats, supportedSchemas } from '../schemas/edi';
 import { converterFactory } from './converters/uploadConverterFactory';
 import { parserFactory } from './parsers/uploadParserFactory';
-
-type Separators = {
-  element: string;
-  line: string;
-};
-
-export interface FileOptions {
-  separators: Separators;
-  type?: EdiFormat;
-  target: EdiFormat;
-}
+import { FileOptions } from './primitives/FileOptions';
 
 export class UploadService {
   identifyFile(filePath: string, options: FileOptions): EdiFormat {

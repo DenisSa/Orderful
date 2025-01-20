@@ -1,6 +1,6 @@
 import { logger } from '../../logger';
 import { EDIFormats } from '../../schemas/edi';
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 import { AnsiX12Parser } from './ansix12parser';
 import { IParser } from './IParser';
 import { JSONParser } from './jsonParser';

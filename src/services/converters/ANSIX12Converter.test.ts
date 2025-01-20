@@ -1,5 +1,5 @@
 import { EDIFormats } from '../../schemas/edi';
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 import { Ansix12Converter } from './ANSIX12Converter';
 
 describe('ANSIX12 Converter Test', () => {

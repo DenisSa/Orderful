@@ -1,4 +1,4 @@
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 
 export type SimpleJson = Record<string, Array<Record<string, string>>>;
 

@@ -14,7 +14,8 @@
     "lint:fix": "npm run lint:base src -- --fix",
     "lint:base": "eslint -c eslint.config.js --max-warnings 0",
     "lint:circular": "madge --circular --extensions ts src",
-    "prettier:check": "prettier --check --write ."
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --check --write ."
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

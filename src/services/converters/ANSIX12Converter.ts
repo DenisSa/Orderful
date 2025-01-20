@@ -1,5 +1,5 @@
 import { SimpleJson } from '../parsers/IParser';
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 import { IConverter } from './IConverter';
 
 export class Ansix12Converter implements IConverter {

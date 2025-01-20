@@ -1,4 +1,4 @@
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 import { IParser } from './IParser';
 
 export class PlainFileParser implements IParser {

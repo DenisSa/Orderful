@@ -1,5 +1,5 @@
 import { EDIFormats } from '../../schemas/edi';
-import { FileOptions } from '../uploadService';
+import { FileOptions } from '../primitives/FileOptions';
 import { PlainFileParser } from './plainFileParser';
 
 const input = `ProductID*4*8*15*16*23~
