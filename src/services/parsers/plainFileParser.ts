@@ -20,8 +20,8 @@ export class PlainFileParser implements IParser {
       }
       const title = elements[0].trim();
 
-      if(!title){
-        return
+      if (!title) {
+        return;
       }
 
       const elementBody = elements.slice(1);
@@ -37,7 +37,6 @@ export class PlainFileParser implements IParser {
       result[`${title}`]?.push(obj);
     });
 
-    console.log(result)
     return result;
   }
 }
