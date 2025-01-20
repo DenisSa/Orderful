@@ -20,6 +20,10 @@ export class PlainFileParser implements IParser {
       }
       const title = elements[0].trim();
 
+      if(!title){
+        return
+      }
+
       const elementBody = elements.slice(1);
 
       elementBody.forEach((element, eIndex) => {
@@ -29,9 +33,11 @@ export class PlainFileParser implements IParser {
       if (!result[`${title}`]) {
         result[`${title}`] = [];
       }
+
       result[`${title}`]?.push(obj);
     });
 
+    console.log(result)
     return result;
   }
 }
