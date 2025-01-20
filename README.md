@@ -58,13 +58,14 @@ Once the file is uploaded, there are multiple layers of validation before we com
 2. Light schema validation with zod - my thinking here was to do a light pass to validate whether the file format uploaded is one of the formats we support. This is meant to avoid erroneously parsing large files
 
 If the uploaded file is of one of supported formats, we attempt to parse it
+
 1. I've chosen to use JSON as an intermediary format to parse to. My reasoning for it was to save coding time at expense of compute time, so I could convert any uploaded format to JSON, and then convert JSON to any supported format.
 2. There are sets of parsers and converters. Converters work on JSON to convert to desired format, and parsers parse to JSON.
 3. If I wanted to include another format, I would have to
-    1. Update validator logic to accept new file format
-    2. Write a format -> JSON parser implementing IParser
-    3. Write a JSON -> format parser implementing IConverter
-    4. Add new parser/converter to their respective factories
+   1. Update validator logic to accept new file format
+   2. Write a format -> JSON parser implementing IParser
+   3. Write a JSON -> format parser implementing IConverter
+   4. Add new parser/converter to their respective factories
 
 On Success, user will synchronously receive a response such as:
 
@@ -108,13 +109,13 @@ On Success, user will synchronously receive a response such as:
     },
     "format": "JSON"
 }
- ```
+```
 
- On error, user will get a response such as
+On error, user will get a response such as
 
- ```
- {
-    "message": "No path to convert file has been found",
-    "error": "Separators are not provided but are required"
+```
+{
+   "message": "No path to convert file has been found",
+   "error": "Separators are not provided but are required"
 }
 ```
